@@ -49,8 +49,6 @@ if (class_exists('mmvc')) {
           break;
         }
 
-        $newspod = new Pod('news', $post->ID);
-
         $widget_data['items'][] = array(
           'offset' => $news_count,
           'id' => $post->ID,
