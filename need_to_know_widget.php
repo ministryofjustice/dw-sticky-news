@@ -23,8 +23,8 @@ if (class_exists('mmvc')) {
       $need_to_know_story3 = get_option('need_to_know_story3');
 
       $cquery = array(
-        'orderby'         =>'post_date',
-        'order'           =>'DESC',
+        'orderby'         =>'post__in',
+        'order'           =>'ASC',
         'post_type'       =>'news',
         'posts_per_page'  => 3,
         'post__in'        => array($need_to_know_story1,$need_to_know_story2,$need_to_know_story3)
