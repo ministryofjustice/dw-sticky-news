@@ -12,7 +12,7 @@
     <ul class="page-list">
       <?php for($a=1, $count=count($data['items']); $a<=$count; $a++): ?>
         <li class="item" data-page-id="<?=$a?>">
-          <a href="#">
+          <a href="#" title="page <?=$a?>">
             <?=$a?>
           </a>
         </li>
