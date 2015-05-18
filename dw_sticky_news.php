@@ -4,8 +4,10 @@ Plugin Name: DW Sticky news
 Description: Display sticky news
 */
 
-error_reporting(E_ALL ^ E_NOTICE);
-ini_set('display_errors', 1);
+if(WP_DEBUG) {
+  error_reporting(E_ALL ^ E_NOTICE);
+  ini_set('display_errors', 1);
+}
 
 if (class_exists('mmvc')) {
   class DW_sticky_news_controller extends MVC_controller {
